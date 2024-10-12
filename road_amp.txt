@@ -1,0 +1,42 @@
+Online Discussion Forum
+
+1.User Registration
+2.User Login
+3.User Chooses a Category
+4.User Adds a Post
+5.User Likes a Post
+6.User Comments on a Post
+
+Work:
+
+--The user will register on the site.
+--After authentication using JWT, he/she can interact with the site.
+--The user will choose a category from the list displayed on the screen.
+--The user creates a post.
+--The user can like a post.
+--The user can comment on a post.
+
+Practical:
+--The user will register [Provide the data].
+--The user will log in [Provide the email and password] [along with JWT].
+--The user will create a post [Provide the topic name] [along with JWT].
+--The user will create a post with /:categoryId [Provide the title and content along with its categoryId] [along with JWT].
+--The user will like a post with /:postId [The user just passes the postId of the post they want to like the like is automatically added to the post table] [along with JWT].
+--The user will comment on a post with /:postId [The user just passes the postId of the post they want to comment on the comment is automatically added to the post table] [along with JWT] [Add text as well].
+--The user can search for a post by giving the title of the post or category.
+
+Tables:
+
+User Account,
+Category,
+Post,
+like,
+comment
+
+URL:
+
+user/Registration -- post 
+user/login-- post
+user/category-- post [Token]
+user/Post/:categoryId-- post [Token]
+user/like/:postId --get[Token]
